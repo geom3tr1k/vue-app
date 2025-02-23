@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import TaskAcces from '../views/TaskAccessViews.vue'
+import TaskAcces from '../views/TaskViews.vue'
 import '../assets/bootstrap.min.css'
 import '../assets/bootstrap.min.js'
 import Edit from '../views/TaskEditViews.vue'
@@ -7,6 +7,7 @@ import Login from '../views/LoginViews.vue'
 import Reg from '../views/RegistrView.vue'
 import Upload  from "../views/TaskUploadView.vue";
 import NotFoundView from "../views/NotFoundViev.vue"
+import Access from "../views/TaskAccessView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -35,6 +36,11 @@ const router = createRouter({
       path: '/upload',
       name: 'upload',
       component: Upload,
+    },
+    {
+      path: '/access/:id',
+      name: 'access',
+      component: Access,
     },
     { path: "/:catchAll(.*)", 
       name: "NotFound", 

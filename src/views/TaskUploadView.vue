@@ -58,7 +58,7 @@ async function submit(){
                   type="text"
                   class="form-control"
                   id="fileName"
-                  placeholder="описание"
+                  placeholder="описание, максимум 30 символов"
                   required
                   v-model="description"
                 />

@@ -77,7 +77,7 @@ const response = await fetch(`${API}/tasks/${id}`, {
                 clip-rule="evenodd"
               />
             </svg>
-            Назад</RouterLink
+            Назад</RouterLink>
           >
         </div>
       </div>
